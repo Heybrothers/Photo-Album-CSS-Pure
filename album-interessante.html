@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>álbum feito com css puro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+        .box-galeria-obras {
+            max-width: 1050px;
+            margin: auto;
+            padding: 75px 30px;
+        }
+
+        .galeria-obras-juntos-1 {
+            display: flex;
+            margin: 0px 3px 50px 3px;
+        }
+
+        .galeria-obras-juntos-2 {
+            display: flex;
+            margin: 0px 3px 50px 3px;
+        }
+
+        .galeria-obras-juntos-3 {
+            display: flex;
+            margin: 0px 3px;
+        }
+
+        .galeria-obras-1 {
+            display: flex;
+            margin: auto;
+        }
+
+        .galeria-obras-2 {
+            display: flex;
+            margin: auto;
+        }
+
+        .imagem-obras {
+            background-image: url(https://rampromotional.com/wp-content/uploads/2016/05/250x250-4.png); 
+            background-size:100% auto; 
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .texto-da-imagem {
+            padding: 20px;
+            font-family: Arial;
+            text-align: center;
+            color: white;
+            opacity: 0;
+            transition: opacity .2s linear;
+            background-color:rgba(0,0,0,.7);
+        }
+
+        .imagem-obras:hover .texto-da-imagem {
+            opacity:1;
+        }
+
+        .texto-obras {
+            margin: auto;
+            margin: auto 0px;
+            color: #333;
+            font-size: 19px;
+            line-height: 27.5px;
+            text-align: center;
+            background-color: #efefef;
+            border-radius: 0px 10px 10px 0px;
+            padding: 20px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        .link-obras {
+            margin-top: 20px;
+            line-height: 27.5px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        .link-obras a {
+            color: #333;
+            font-size: 19px;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1150px) {
+        .box-galeria-obras {
+            padding: 75px 30px;
+        }
+
+        .galeria-obras-1 {
+            display: block;
+        }
+
+        .galeria-obras-2 {
+            display: block;
+        }
+
+        .imagem-obras {
+            display: block;
+        }
+
+        .texto-obras {
+            border: none;
+            margin: 10px 0px 0px 0px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .texto-obras a {
+            font-size: 18px;
+        }
+        }
+
+        @media (max-width: 1000px) {
+        .box-galeria-obras {
+            padding: 30px;
+            margin: 0px;
+        }
+
+        .galeria-obras-juntos-1 {
+            display: block;
+            margin: 0px 0px 50px 0px;
+        }
+
+        .galeria-obras-juntos-2 {
+            display: block;
+            margin: 0px 0px 50px 0px;
+        }
+
+        .galeria-obras-juntos-3 {
+            display: block;
+            margin: 0px;
+        }
+
+        .galeria-obras-1 {
+            margin-bottom: 50px;
+        }
+
+        .imagem-obras {
+            width: 100%;
+        }
+
+        .texto-da-imagem {
+            opacity: 1;
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box-galeria-obras">
+
+
+            <div class="galeria-obras-juntos-1">
+    
+                <div class="galeria-obras-1">
+                    <div class="imagem-obras">
+                    <div class="texto-da-imagem">Fazenda Porto Branco<br><br>Campo Novo do parecis</div>
+                    </div>
+                    <div class="texto-obras"><strong>Obras:</strong> 3 Bases de Silo<br><strong>Duração:</strong> 8 Meses<br><div class="link-obras"><a href="">Ver fotos</a></div></div>
+                </div>
+    
+                <div class="galeria-obras-2">
+                    <div class="imagem-obras">
+                    <div class="texto-da-imagem">Fazenda São Baronesa<br><br>Terra Boa</div>
+                    </div>
+                    <div class="texto-obras"><strong>Obras:</strong> 2 Bases de Silo<br><strong>Duração:</strong> 6 Meses<br><div class="link-obras"><a href="">Ver fotos</a></div></div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="galeria-obras-juntos-2">
+    
+                <div class="galeria-obras-1">
+                    <div class="imagem-obras">
+                    <div class="texto-da-imagem">Fazenda Porto Branco<br><br>Campo Novo do parecis</div>
+                    </div>
+                    <div class="texto-obras"><strong>Obras:</strong> 3 Bases de Silo<br><strong>Duração:</strong> 8 Meses<br><div class="link-obras"><a href="">Ver fotos</a></div></div>
+                </div>
+    
+                <div class="galeria-obras-2">
+                    <div class="imagem-obras">
+                    <div class="texto-da-imagem">Fazenda São Baronesa<br><br>Terra Boa</div>
+                    </div>
+                    <div class="texto-obras"><strong>Obras:</strong> 2 Bases de Silo<br><strong>Duração:</strong> 6 Meses<br><div class="link-obras"><a href="">Ver fotos</a></div></div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="galeria-obras-juntos-3">
+    
+                <div class="galeria-obras-1">
+                    <div class="imagem-obras">
+                    <div class="texto-da-imagem">Fazenda Porto Branco<br><br>Campo Novo do parecis</div>
+                    </div>
+                    <div class="texto-obras"><strong>Obras:</strong> 3 Bases de Silo<br><strong>Duração:</strong> 8 Meses<br><div class="link-obras"><a href="">Ver fotos</a></div></div>
+                </div>
+    
+                <div class="galeria-obras-2">
+                    <div class="imagem-obras">
+                    <div class="texto-da-imagem">Fazenda São Baronesa<br><br>Terra Boa</div>
+                    </div>
+                    <div class="texto-obras"><strong>Obras:</strong> 2 Bases de Silo<br><strong>Duração:</strong> 6 Meses<br><div class="link-obras"><a href="">Ver fotos</a></div></div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    </body>
+</html>
